@@ -26,7 +26,7 @@
     <div class=container style=text-align:center>
         <table>
             <tr>
-                
+                <th>id</th>
                 <th>name</th>
                 <th>color</th>
             </tr>
@@ -36,8 +36,8 @@
     foreach (Tomproducts::all() as $product): ?>
 
             <tr>
+                <td><?php echo $product->id;?></td>
                 <td> <?php echo $product->name;?></td>
-
                 <td> <?php echo $product->color;?> </td>
             </tr>
 
