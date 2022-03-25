@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use app\http\Controllers\Tomproducts;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('about', function () {
-    return view('about');
+Route::get('Tomhome', function () {
+    return view('Tomhome');
 });
+
+Route::resource('products', Tomproducts::class);
