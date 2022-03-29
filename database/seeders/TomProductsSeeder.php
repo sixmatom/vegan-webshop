@@ -6,8 +6,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\support\Str;
+use App\Models\Tomproducts;
 
 class TomProductsSeeder extends Seeder
 {
@@ -19,13 +18,11 @@ class TomProductsSeeder extends Seeder
      */
     public function run()
     {
-       for($i = 1; $i <= 10; $i++){
-        DB::table('tomproducts')->insert([
-           'name' => Str::random(10),
-           'color' => Str::random(10),
+       Tomproducts::factory()->count(10)->create();
        
 
-       ]);
+       
        }
     }
-}
+
+    

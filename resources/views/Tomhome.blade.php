@@ -38,9 +38,10 @@
             <tr>
                 <td><?php echo $product->id;?></td>
                 <td> <?php echo $product->name;?></td>
-                <td> <?php echo $product->color;?> </td>
+                <td style="background-color:<?php echo $product->color;?>"> </td>
             </tr>
 
             <?php endforeach;  ?>
         </table>
+
     </div>
