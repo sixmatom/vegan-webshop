@@ -28,6 +28,7 @@
             <tr>
                 <th>id</th>
                 <th>name</th>
+                <th>image</th>
                 <th>color</th>
             </tr>
             <?php 
@@ -38,6 +39,7 @@
             <tr>
                 <td><?php echo $product->id;?></td>
                 <td> <?php echo $product->name;?></td>
+                <td><img src="<?php echo $product->imagepath;?>" alt="">
                 <td style="background-color:<?php echo $product->color;?>"> </td>
             </tr>
 

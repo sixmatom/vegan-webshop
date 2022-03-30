@@ -21,7 +21,8 @@ class TomproductsFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'color' => $this->faker->hexColor(), //
+            'color' => $this->faker->hexColor(),
+            'imagepath' => $this->faker->imageUrl(125,125), //
         ];
     }
 }
